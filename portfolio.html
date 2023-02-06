@@ -7,6 +7,11 @@
             content="Zadanie domowe studentów #2 Main Page"
         />
         <title>Zadanie domowe GOIT Polska</title>
+        <!-- Tutaj znajduje się link do normalizotora stylów !!!Uwaga zawsze przed własnyn arkuszem stylów -->
+        <link
+            rel="stylesheet"
+            href="node_modules/modern-normalize/modern-normalize.css"
+        />
 
         <!-- Tutaj znajduje się link do arkusza stylów -->
         <link rel="stylesheet" href="./css/styles.css" />
@@ -25,12 +30,12 @@
             rel="stylesheet"
         />
     </head>
-    <body>
+    <body class="container">
         <header class="header">
             <!-- Tutaj znajduje się nagłówek strony -->
-            <a href="index.html" class="link header-logo">
+            <a href="index.html" class="link header-logo no-gap">
                 <span class="header-logo-web">Web</span>
-                <span class="header-logo-studio">Studio</span>
+                <span class="header-logo-studio no-gap">Studio</span>
             </a>
             <nav class="header-navigation">
                 <!-- Nawigacja do innych stron -->
@@ -59,22 +64,26 @@
         </header>
         <main>
             <!-- 5 PRZYCISKÓW -->
-            <section class="section-fivebuttons">
-                <button type="button" class="button-portfolio">
-                    Wszystkie
-                </button>
-                <button type="button" class="button-portfolio">Strony</button>
-                <button type="button" class="button-portfolio">
-                    Aplikacje
-                </button>
-                <button type="button" class="button-portfolio">Dizajn</button>
-                <button type="button" class="button-portfolio">
-                    Marketing
-                </button>
-            </section>
+            <section class="section">
+                <div class="subsection-fivebuttons">
+                    <button type="button" class="button-portfolio">
+                        Wszystkie
+                    </button>
+                    <button type="button" class="button-portfolio">
+                        Strony
+                    </button>
+                    <button type="button" class="button-portfolio">
+                        Aplikacje
+                    </button>
+                    <button type="button" class="button-portfolio">
+                        Dizajn
+                    </button>
+                    <button type="button" class="button-portfolio">
+                        Marketing
+                    </button>
+                </div>
 
-            <!-- first picture raw -->
-            <section class="section-firstraw">
+                <!-- first picture raw -->
                 <ul class="section-list">
                     <li>
                         <div class="portfolio-photo-box">
@@ -120,12 +129,10 @@
                             <p class="portfolio-text-photo">Aplikacja</p>
                         </div>
                     </li>
-                </ul>
-            </section>
+                    <
 
-            <!-- middle picture raw -->
-            <section class="section-middleraw">
-                <ul class="section-list">
+                    <!-- middle picture raw -->
+
                     <li>
                         <div class="portfolio-photo-box">
                             <img
@@ -168,12 +175,7 @@
                             </p>
                         </div>
                     </li>
-                </ul>
-            </section>
-
-            <!--last picture raw -->
-            <section class="section-lastraw">
-                <ul class="section-list">
+                    <!--last picture raw -->
                     <li>
                         <div class="portfolio-photo-box">
                             <img
@@ -224,7 +226,7 @@
 
             <a href="index.html" class="footer-logo link">
                 <span class="footer-logo-web">Web</span>
-                <span class="footer-logo-studio">Studio</span>
+                <span class="footer-logo-studio no-gap">Studio</span>
             </a>
             <!-- Adress  -->
             <address class="footer-address">

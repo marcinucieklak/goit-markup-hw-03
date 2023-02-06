@@ -7,6 +7,11 @@
             content="Zadanie domowe studentów #2 Main Page"
         />
         <title>Zadanie domowe GOIT Polska</title>
+        <!-- Tutaj znajduje się link do normalizotora stylów !!!Uwaga zawsze przed własnyn arkuszem stylów -->
+        <link
+            rel="stylesheet"
+            href="node_modules/modern-normalize/modern-normalize.css"
+        />
 
         <!-- Tutaj znajduje się link do arkusza stylów -->
         <link rel="stylesheet" href="./css/styles.css" />
@@ -25,12 +30,12 @@
             rel="stylesheet"
         />
     </head>
-    <body>
+    <body class="container">
         <header class="header">
             <!-- Tutaj znajduje się nagłówek strony -->
             <a href="index.html" class="link header-logo">
                 <span class="header-logo-web">Web</span>
-                <span class="header-logo-studio">Studio</span>
+                <span class="header-logo-studio no-gap">Studio</span>
             </a>
             <nav class="header-navigation">
                 <!-- Nawigacja do innych stron -->
@@ -70,46 +75,44 @@
                 </button>
             </section>
 
-            <!-- 4 paragraph section -->
-            <section class="section-fourpharagraf">
-                <ul class="section-list">
-                    <li>
-                        <h3 class="title-tree">LOREM IPSUM</h3>
-                        <p class="text-fourpharagraf">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Fugiat veniam aperiam id modi saepe molestiae,
-                            eveniet placeat perferendis inventore!
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="title-tree">LOREM IPSUM</h3>
-                        <p class="text-fourpharagraf">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Fugiat veniam aperiam id modi saepe molestiae,
-                            eveniet placeat perferendis inventore!
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="title-tree">LOREM IPSUM</h3>
-                        <p class="text-fourpharagraf">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Fugiat veniam aperiam id modi saepe molestiae,
-                            eveniet placeat perferendis inventore!
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="title-tree">LOREM IPSUM</h3>
-                        <p class="text-fourpharagraf">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Fugiat veniam aperiam id modi saepe molestiae,
-                            eveniet placeat perferendis inventore!
-                        </p>
-                    </li>
-                </ul>
-            </section>
+            <!-- 4 paragraph part -->
+            <ul class="section-list">
+                <li>
+                    <h3 class="title-tree">LOREM IPSUM</h3>
+                    <p class="text-fourpharagraf">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat veniam aperiam id modi saepe molestiae, eveniet
+                        placeat perferendis inventore!
+                    </p>
+                </li>
+                <li>
+                    <h3 class="title-tree">LOREM IPSUM</h3>
+                    <p class="text-fourpharagraf">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat veniam aperiam id modi saepe molestiae, eveniet
+                        placeat perferendis inventore!
+                    </p>
+                </li>
+                <li>
+                    <h3 class="title-tree">LOREM IPSUM</h3>
+                    <p class="text-fourpharagraf">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat veniam aperiam id modi saepe molestiae, eveniet
+                        placeat perferendis inventore!
+                    </p>
+                </li>
+                <li>
+                    <h3 class="title-tree">LOREM IPSUM</h3>
+                    <p class="text-fourpharagraf">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat veniam aperiam id modi saepe molestiae, eveniet
+                        placeat perferendis inventore!
+                    </p>
+                </li>
+            </ul>
 
             <!-- Area of interest -->
-            <section class="section-areaofinterest">
+            <section class="section">
                 <h2 class="title-two">Czym się zajmujemy</h2>
                 <ul class="section-list">
                     <li>
@@ -147,9 +150,8 @@
             </section>
 
             <!-- Our team -->
-            <section class="section-ourteam">
+            <section class="section background-ourteam">
                 <h2 class="title-two">Nasz zespół</h2>
-
                 <ul class="section-list">
                     <li>
                         <div class="photo-box">
@@ -210,7 +212,7 @@
 
             <a href="index.html" class="footer-logo link">
                 <span class="footer-logo-web">Web</span>
-                <span class="footer-logo-studio">Studio</span>
+                <span class="footer-logo-studio no-gap">Studio</span>
             </a>
             <!-- Adress  -->
             <address class="footer-address">

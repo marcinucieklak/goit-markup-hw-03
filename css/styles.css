@@ -1,5 +1,8 @@
-/* Zadanie domowe studentów #2 */
+/* Zadanie domowe studentów #3 */
 
+/*normalizator stylów */
+@import 'node_modules/modern-normalize/modern-normalize.css';
+/*czciąki */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 
 :root {
@@ -18,6 +21,7 @@
     --bg-color-four: #2F303A;
     --bg-color-five: #2196F3;
     --border-color-one: #EEEEEE;
+    --border-color-two: #ECECEC;
 }
 
 body {
@@ -25,6 +29,23 @@ body {
     background-color: var(--bg-color-one, #FFFFFF);
     color: var(--text-collor-one, #000000);
 }
+
+.container{
+    width: 1600px;
+}
+
+.section{
+  box-sizing: border-box;
+  padding-top: 94px;
+  padding-bottom: 94px; 
+}
+ 
+/* wyjątek - wymuszenie usunięcia przerwy pomiędzy elementami liniowymi*/
+.no-gap { 
+    margin-left: -6px;        
+}
+
+
 
 .link {
     text-decoration: none;
@@ -44,6 +65,7 @@ link:hover, link:focus {
     text-align: left
 }
 
+/* docelowo portfolio .header-link-navigation:visited */
 .header-link-navigation-selected {
     margin-inline: 32px;
     color: var(--text-color-five, #2196F3);
@@ -53,6 +75,17 @@ link:hover, link:focus {
     letter-spacing: 0.02em;
     text-align: left
 }
+
+.header-link-navigation:first-child {
+    margin-left: 0px;
+    margin-right: 32px;
+}
+
+.header-link-navigation:last-child {
+    margin-left: 32px;
+    margin-right: 0px;
+}
+
 
 .header-link-navigation:hover, .header-link-navigation:focus {
     color: var(--text-color-five, #2196F3);
@@ -68,6 +101,16 @@ link:hover, link:focus {
     text-align: left;
 }
 
+.header-link-addresses:first-child {
+    margin-left: 0px;
+    margin-right: 32px;
+}
+
+.header-link-addresses:last-child {
+    margin-left: 32px;
+    margin-right: 0px;
+}
+
 .header-link-addresses:hover, .header-link-addresses:focus {
     color: var(--text-color-five, #2196F3); 
 }
@@ -75,9 +118,11 @@ link:hover, link:focus {
 .header {
     background-color: var(--bg-color-one, #FFFFFF);
     height: 80px;
-    width: 1600px;
     display: flex;
     justify-content: space-between;
+    border-bottom-color: var(--border-color-one, #EEEEEE);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
 .header-logo{
@@ -87,16 +132,16 @@ link:hover, link:focus {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    text-align: left;   
-}
+    text-align: left; 
+    }
+
 
 .header-logo-web {
     font-family: Raleway;
-    color: var(--logo-color, #2196F3); 
+    color: var(--logo-color, #2196F3);
 }
 
 .header-logo-studio {
-    margin-left:-5px;
     color:var(--logo-color-dark, #000000);
     font-family: Raleway;
 }
@@ -116,15 +161,16 @@ link:hover, link:focus {
 
 .section-topmain {
     background-color: var(--bg-color-four, #2F303A);
-    height: 600px;
-    width: 1600px; 
+    margin: 0;
+    box-sizing:border-box;
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
 }
 
 .title-one {
     color: var(--text-color-four, #FFFFFF);
-    text-align: center;
-    padding-top: 200px;
+    text-align: center;    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -148,17 +194,14 @@ link:hover, link:focus {
     text-align: center;
 }
 
-.section-fourpharagraf {
-    width: 1600px;
-    padding-top: 24px;
-}
-
 .section-list {
     padding-left: 215px; 
     padding-right: 215px; 
     display: flex; 
     justify-content: space-between; 
     list-style-type: none;
+    padding-top: 24px;
+    flex-wrap: wrap;
 } 
 
 .title-tree {
@@ -182,14 +225,8 @@ link:hover, link:focus {
     letter-spacing: 0.03em;
     text-align: left;   
 }
-
-.section-areaofinterest {
-    width: 1600px;
-    padding-top: 24px;
-}
     
 .title-two {
-    padding-top: 94px;
     color: var(--text-color-two, #212121);
     font-size: 36px;
     font-weight: 700;
@@ -198,12 +235,8 @@ link:hover, link:focus {
     text-align: center;
 }  
         
-.section-ourteam {
-    padding-top: 24px;
-    background-color: var(--bg-color-tree, #F5F4FA);
-    height: 648px; 
-    width: 1600px; 
-    text-align: center;   
+.background-ourteam {
+    background-color: var(--bg-color-tree, #F5F4FA); 
 }
 
 .photo-box {
@@ -236,7 +269,6 @@ link:hover, link:focus {
 .footer {
     background-color: #2F303A;
     height: 252px; 
-    width: 1600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -258,7 +290,6 @@ link:hover, link:focus {
 }
 
 .footer-logo-studio {
-    margin-left: -5px;
     color: var(--logo-color-light, #FFFFFF);
     font-family: Raleway;
 }
@@ -293,18 +324,14 @@ link:hover, link:focus {
     color: var(--text-color-six, rgba(255, 255, 255, 0.6));
 }
 
-.section-fivebuttons {
-    padding-top: 94px;
-    padding-bottom: 26px;
-    width: 1600px;
-    display: flex;
+.subsection-fivebuttons {
+    display:flex;
     justify-content: center;
 }
 
 .button-portfolio {
     border-style: none;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-inline: 8px;
     background: var(--bg-color-tree, #F5F4FA);
     color: var(--text-color-two, #212121);
     border-radius: 4px;
@@ -316,6 +343,16 @@ link:hover, link:focus {
     text-align: center;
 }
 
+.button-portfolio:first-child {
+        margin-left: 0px;
+        margin-right: 8px;
+}
+
+.button-portfolio:last-child {
+    margin-left: 8px;
+    margin-right: 0px;
+}
+
 .button-portfolio:hover, .button-portfolio:focus {
     background: var(--bg-color-five, #2196F3);
     color: var(--text-color-four, #FFFFFF)
@@ -323,20 +360,17 @@ link:hover, link:focus {
 
 .section-firstraw {
     padding-top: 30px;
-    width: 1600px;
     text-align: left;
 }
 
 .section-middleraw {
     padding-top: 30px;
-    width: 1600px;
     text-align: left;
 }
 
 .section-lastraw {
     padding-top: 30px;
     padding-bottom: 94px;
-    width: 1600px;
     text-align: left;
 }
     
