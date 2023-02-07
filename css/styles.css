@@ -183,6 +183,7 @@ link:hover, link:focus {
 
 .title-one {
     color: var(--base-color-white, #FFFFFF);
+    margin: 0;
     text-align: center;    
     font-weight: 900;
     font-size: 44px;
@@ -195,6 +196,7 @@ link:hover, link:focus {
 .button-topmain {
     width: 200px;
     height: 50px;
+    margin-top: 30px;
     background: var(--base-color-blue, #2196F3);
     color: var(--text-color-four, #FFFFFF);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -211,14 +213,17 @@ link:hover, link:focus {
     display: flex;
     justify-content: space-between; 
     list-style-type: none;
+    padding-top: 50px;
 } 
 
 .portfolio-list{
+    margin: 0;
     display: grid;
     grid: auto / auto auto auto;
     grid-gap: 30px;
     list-style-type: none;
     padding-top: 50px;
+    padding-left: 15px;
 }
 
 .title-tree {
@@ -245,6 +250,7 @@ link:hover, link:focus {
     
 .title-two {
     color: var(--base-color-darck-grey, #212121);
+    margin: 0;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
@@ -353,7 +359,7 @@ link:hover, link:focus {
 .button-portfolio {
     border-style: none;
     padding: 8px 22px;
-    margin-inline: 8px;
+    margin-inline: 4px;
     background: var(--base-color-ligth-two, #F5F4FA);
     color: var(--text-color-two, #212121);
     border-radius: 4px;
