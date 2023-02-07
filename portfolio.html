@@ -30,39 +30,48 @@
             rel="stylesheet"
         />
     </head>
-    <body class="container">
-        <header class="header">
-            <!-- Tutaj znajduje się nagłówek strony -->
-            <a href="index.html" class="link header-logo no-gap">
-                <span class="header-logo-web">Web</span>
-                <span class="header-logo-studio no-gap">Studio</span>
-            </a>
-            <nav class="header-navigation">
-                <!-- Nawigacja do innych stron -->
-                <a href="#" class="link header-link-navigation">Agencja</a>
-                <a
-                    href="portfolio.html"
-                    class="link header-link-navigation-selected"
-                    >Portfoio</a
-                >
-                <a href="#" class="link header-link-navigation">Kontakt</a>
-            </nav>
-
-            <!-- Dane adresowe  -->
-            <div class="header-addresses">
-                <!-- Link do adresu e-mail  -->
-                <a
-                    href="maailto:info@devstudio.com"
-                    class="link header-link-addresses"
-                    >info@devstudio.com</a
-                >
-                <!-- Link do numeru telefonu -->
-                <a href="tel:+48111111111" class="link header-link-addresses"
-                    >+48 111 111 111</a
-                >
+    <body>
+        <header>
+            <div class="container header-layout">
+                <!-- Tutaj znajduje się nagłówek strony -->
+                <div>
+                    <a href="index.html" class="link header-logo">
+                        <span class="header-logo-web">Web</span>
+                        <span class="header-logo-studio no-gap">Studio</span>
+                    </a>
+                    <nav class="header-navigation">
+                        <!-- Nawigacja do innych stron -->
+                        <a href="#" class="link header-link-navigation"
+                            >Agencja</a
+                        >
+                        <a
+                            href="portfolio.html"
+                            class="link header-link-navigation-selected"
+                            >Portfolio</a
+                        >
+                        <a href="#" class="link header-link-navigation"
+                            >Kontakt</a
+                        >
+                    </nav>
+                </div>
+                <!-- Dane adresowe  -->
+                <div class="header-addresses">
+                    <!-- Link do adresu e-mail  -->
+                    <a
+                        href="maailto:info@devstudio.com"
+                        class="link header-link-addresses"
+                        >info@devstudio.com</a
+                    >
+                    <!-- Link do numeru telefonu -->
+                    <a
+                        href="tel:+48111111111"
+                        class="link header-link-addresses"
+                        >+48 111 111 111</a
+                    >
+                </div>
             </div>
         </header>
-        <main>
+        <main class="container">
             <!-- 5 PRZYCISKÓW -->
             <section class="section">
                 <div class="subsection-fivebuttons">
@@ -84,7 +93,7 @@
                 </div>
 
                 <!-- first picture raw -->
-                <ul class="section-list">
+                <ul class="portfolio-list">
                     <li>
                         <div class="portfolio-photo-box">
                             <img
@@ -129,7 +138,6 @@
                             <p class="portfolio-text-photo">Aplikacja</p>
                         </div>
                     </li>
-                    <
 
                     <!-- middle picture raw -->
 
@@ -221,27 +229,30 @@
                 </ul>
             </section>
         </main>
-        <footer class="footer">
-            <!-- Tutaj znajduje się stopka strony -->
+        <footer>
+            <div class="container footer-layout">
+                <!-- Tutaj znajduje się stopka strony -->
+                <a href="index.html" class="footer-logo link">
+                    <span class="footer-logo-web">Web</span>
+                    <span class="footer-logo-studio no-gap">Studio</span>
+                </a>
+                <div>
+                    <!-- Adress  -->
+                    <address class="footer-address">
+                        m. Warszawa, Aleje Jerozolimskie 21
+                    </address>
 
-            <a href="index.html" class="footer-logo link">
-                <span class="footer-logo-web">Web</span>
-                <span class="footer-logo-studio no-gap">Studio</span>
-            </a>
-            <!-- Adress  -->
-            <address class="footer-address">
-                m. Warszawa, Aleje Jerozolimskie 21
-            </address>
+                    <!-- Link do adresu e-mail  -->
+                    <a href="mailto:info@devstudio.com" class="link footer-mail"
+                        >info@devstudio.com</a
+                    >
 
-            <!-- Link do adresu e-mail  -->
-            <a href="mailto:info@devstudio.com" class="link footer-mail"
-                >info@devstudio.com</a
-            >
-
-            <!-- Link do numeru telefonu -->
-            <a href="tel:+48111111111" class="link footer-phone"
-                >+48 111 111 111</a
-            >
+                    <!-- Link do numeru telefonu -->
+                    <a href="tel:+48111111111" class="link footer-phone"
+                        >+48 111 111 111</a
+                    >
+                </div>
+            </div>
         </footer>
     </body>
 </html>
